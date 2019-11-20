@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title style="text-align : center;">Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-grid>
+  <!-- <img src="/assets/stikom.png" style="width: 200px; height: 200px;" class="centered-element"> -->
+  <ion-row justify-content-center>
+    <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+      <div text-center>
+        <h4>Silahkan Masukan NPM dan Password Anda</h4>
+      </div>
+      <div padding>
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="npm" placeholder="npm"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="password" placeholder="password"></ion-input>
+        </ion-item>
+        <div padding>
+          <ion-button size="large" (click)="login()" expand="block">Login</ion-button>
+        </div>
+        <div padding>
+          <ion-button size="large" (click)="daftar()" expand="block" color="danger">Sign Up</ion-button>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

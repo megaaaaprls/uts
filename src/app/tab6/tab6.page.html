@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title style="text-align: center;">Silahkan Isi Data Anda</ion-title>
+    <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <form>
+          <ion-item>
+            <ion-label position="floating">NPM</ion-label>
+            <ion-input type="text" name="npm" [(ngModel)]="npm" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="text" name="password" [(ngModel)]="password" required></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label position="floating">Nama Lengkap</ion-label>
+              <ion-input type="text" name="nama_user" [(ngModel)]="nama_user" required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Jurusan</ion-label>
+              <ion-input type="text" name="jurusan" [(ngModel)]="jurusan" required></ion-input>
+            </ion-item>
+          <ion-button style="margin-block-start: 30px;" expand="block" type="submit" name="sbmt" (click)="simpan()" color="dark">
+            Daftar
+          </ion-button>
+        </form>
+      </ion-list>
+</ion-content>

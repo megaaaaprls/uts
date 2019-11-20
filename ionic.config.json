@@ -1,0 +1,7 @@
+{
+  "name": "stikom",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
